@@ -167,15 +167,42 @@ class Account{
     String accountholder;
     double balance;
 }
-public class Main {
-    public static void main(String[] args) {
-        // Create an Account object
-        Account acc = new Account();
+// public class Main {
+//     public static void main(String[] args) {
+//         // Create an Account object
+//         Account acc = new Account();
         
-        // Print default values of instance variables
-        System.out.println("Account Holder: " + acc.accountholder); // Should print null
-        System.out.println("Balance: " + acc.balance); // Should print 0.0
+//         // Print default values of instance variables
+//         System.out.println("Account Holder: " + acc.accountholder); // Should print null
+//         System.out.println("Balance: " + acc.balance); // Should print 0.0
+//     }
+// 10. Create a class that uses all three types of variables:
+//Instance variable
+//Static variable
+//Local variable
+class Demo{
+    int instanceVariable=5; // Instance variable
+    static int staticVariable=7; // Static variable
+
+    void method() {
+        int localVariable = 10; // Local variable
+        System.out.println("Local Variable: " + localVariable);
+        
     }
+}
+public class Main{
+    public static void main(String[] args) {
+        Demo demo = new Demo();
+        
+        // Accessing instance variable
+        System.out.println("Instance Variable: " + demo.instanceVariable);
+        
+        // Accessing static variable
+        System.out.println("Static Variable: " + Demo.staticVariable);
+        
+        // Calling method to access local variable
+        demo.method();
+}
       
 
 }
