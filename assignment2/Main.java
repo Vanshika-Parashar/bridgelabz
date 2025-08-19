@@ -301,18 +301,29 @@ import java.util.*;
 
 //19. Create an instance variable in a class. Create two objects with different values for it. Show that each object keeps its own copy.
 
+// class Demo {
+//     int value;
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Demo d1 = new Demo();
+//         Demo d2 = new Demo();
+//         d1.value = 10;
+//         d2.value = 20;
+//         System.out.println("d1: " + d1.value + ", d2: " + d2.value);
+//     }
+// }
+//20.Create a program where you access a static variable without creating an object of the class.
+
 class Demo {
-    int value;
+    static int staticVar = 100;
 }
 public class Main {
     public static void main(String[] args) {
-        Demo d1 = new Demo();
-        Demo d2 = new Demo();
-        d1.value = 10;
-        d2.value = 20;
-        System.out.println("d1: " + d1.value + ", d2: " + d2.value);
+        System.out.println("Static Variable: " + Demo.staticVar);
     }
 }
+ 
 
 
 
