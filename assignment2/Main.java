@@ -290,29 +290,29 @@ import java.util.*;
 // }
 //18. Demonstrate variable shadowing using local and instance variables with the same name. Show how to access both.
 
-class Demo {
-    int num = 100; // instance
-    void show() {
-        int num = 50; // local
-        System.out.println("Local: " + num);
-        System.out.println("Instance: " + this.num);
-    }
-}
+// class Demo {
+//     int num = 100; // instance
+//     void show() {
+//         int num = 50; // local
+//         System.out.println("Local: " + num);
+//         System.out.println("Instance: " + this.num);
+//     }
+// }
 
 //19. Create an instance variable in a class. Create two objects with different values for it. Show that each object keeps its own copy.
 
-// class Demo {
-//     int value;
-// }
-// public class Main {
-//     public static void main(String[] args) {
-//         Demo d1 = new Demo();
-//         Demo d2 = new Demo();
-//         d1.value = 10;
-//         d2.value = 20;
-//         System.out.println("d1: " + d1.value + ", d2: " + d2.value);
-//     }
-// }
+class Demo {
+    int value;
+}
+public class Main {
+    public static void main(String[] args) {
+        Demo d1 = new Demo();
+        Demo d2 = new Demo();
+        d1.value = 10;
+        d2.value = 20;
+        System.out.println("d1: " + d1.value + ", d2: " + d2.value);
+    }
+}
 
 
 
