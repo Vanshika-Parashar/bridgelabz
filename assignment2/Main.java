@@ -98,20 +98,38 @@ import java.util.*;
 //         System.out.println("Student 2 Name: " + student2.name + ", Marks: " + student2.marks);
 //     }
 //5.Write a program where you modify a static variable using one object, and access it from another object. Show how it reflects the change.
+// class Demo{
+//     static int count=0;
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         // Create first object
+//         Demo obj1 = new Demo();
+//         obj1.count = 5; // Modify static variable using obj1
+        
+//         // Create second object
+//         Demo obj2 = new Demo();
+        
+//         // Access static variable from obj2
+//         System.out.println("Count from obj2: " + obj2.count); // Should print 5, reflecting the change made by obj1
+//     }
+//6.Create a class Demo where you declare a local variable with the same name as an instance variable. Use this keyword to differentiate.
 class Demo{
-    static int count=0;
+    int value = 10; // Instance variable
+
+    void setnum(int value) { 
+        this.value=value;//differ between lcal and instance 
+        
+    }
+    void display() {
+        System.out.println("Instance variable value: " + value); // Accessing instance variable
+    }
 }
 public class Main {
     public static void main(String[] args) {
-        // Create first object
-        Demo obj1 = new Demo();
-        obj1.count = 5; // Modify static variable using obj1
-        
-        // Create second object
-        Demo obj2 = new Demo();
-        
-        // Access static variable from obj2
-        System.out.println("Count from obj2: " + obj2.count); // Should print 5, reflecting the change made by obj1
+        Demo demo = new Demo();
+        demo.setnum(20); // Setting the instance variable using the method
+        demo.display(); // Displaying the instance variable value
     }
 
 }
