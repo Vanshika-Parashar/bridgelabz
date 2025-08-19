@@ -147,21 +147,35 @@ import java.util.*;
         //The final field Demo.m cannot be assigned . this is the error showing.
 //} 
 //8.Add a static block in a class to initialize a static variable. Print its value from the main() method.
-class Demo{
-    static int staticVariable;
+// class Demo{
+//     static int staticVariable;
 
     // Static block to initialize the static variable
-    static {
-        staticVariable = 42; // Initializing static variable
-    }
+    // static {
+    //     staticVariable = 42; // Initializing static variable
+    // }
 
     
-}
-public class Main{
-    public static void main(String[] args) {
+// }
+// public class Main{
+//     public static void main(String[] args) {
         // Accessing the static variable from the Demo class
-        System.out.println("Static Variable Value: " + Demo.staticVariable); // Should print 42
+//         System.out.println("Static Variable Value: " + Demo.staticVariable); // Should print 42
+// }
+//9.Create a class Account with instance variables: accountHolder, balance. Use default values. Print them without setting any values.
+class Account{
+    String accountholder;
+    double balance;
 }
+public class Main {
+    public static void main(String[] args) {
+        // Create an Account object
+        Account acc = new Account();
+        
+        // Print default values of instance variables
+        System.out.println("Account Holder: " + acc.accountholder); // Should print null
+        System.out.println("Balance: " + acc.balance); // Should print 0.0
+    }
       
 
 }
