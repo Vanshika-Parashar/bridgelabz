@@ -163,10 +163,10 @@ import java.util.*;
 //         System.out.println("Static Variable Value: " + Demo.staticVariable); // Should print 42
 // }
 //9.Create a class Account with instance variables: accountHolder, balance. Use default values. Print them without setting any values.
-class Account{
-    String accountholder;
-    double balance;
-}
+// class Account{
+//     String accountholder;
+//     double balance;
+// }
 // public class Main {
 //     public static void main(String[] args) {
 //         // Create an Account object
@@ -180,32 +180,47 @@ class Account{
 //Instance variable
 //Static variable
 //Local variable
+// class Demo{
+//     int instanceVariable=5; // Instance variable
+//     static int staticVariable=7; // Static variable
+
+//     void method() {
+//         int localVariable = 10; // Local variable
+//         System.out.println("Local Variable: " + localVariable);
+        
+//     }
+// }
+// public class Main{
+//     public static void main(String[] args) {
+//         Demo demo = new Demo();
+        
+//         // Accessing instance variable
+//         System.out.println("Instance Variable: " + demo.instanceVariable);
+        
+//         // Accessing static variable
+//         System.out.println("Static Variable: " + Demo.staticVariable);
+        
+//         // Calling method to access local variable
+//         demo.method();
+// }
+//11.. Declare a class variable (static) without initialization. Print its default value. Then assign and print again.
 class Demo{
-    int instanceVariable=5; // Instance variable
-    static int staticVariable=7; // Static variable
-
-    void method() {
-        int localVariable = 10; // Local variable
-        System.out.println("Local Variable: " + localVariable);
-        
-    }
-}
+    static int var;
+} 
 public class Main{
-    public static void main(String[] args) {
-        Demo demo = new Demo();
+    public static void main(String[] args){
+        // Print default value of static variable
+        System.out.println("Default value of static variable: " + Demo.var); // Should print 0
         
-        // Accessing instance variable
-        System.out.println("Instance Variable: " + demo.instanceVariable);
+        // Assign a value to the static variable
+        Demo.var = 42;
         
-        // Accessing static variable
-        System.out.println("Static Variable: " + Demo.staticVariable);
-        
-        // Calling method to access local variable
-        demo.method();
-}
-      
+        // Print the updated value of static variable
+        System.out.println("Updated value of static variable: " + Demo.var); // Should print 42
+    }
+}     
 
-}
+
 
 
 
