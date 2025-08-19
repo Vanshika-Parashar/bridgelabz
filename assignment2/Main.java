@@ -204,21 +204,44 @@ import java.util.*;
 //         demo.method();
 // }
 //11.. Declare a class variable (static) without initialization. Print its default value. Then assign and print again.
-class Demo{
-    static int var;
+// class Demo{
+//     static int var;
+// } 
+// public class Main{
+//     public static void main(String[] args){
+//         // Print default value of static variable
+//         System.out.println("Default value of static variable: " + Demo.var); // Should print 0
+        
+//         // Assign a value to the static variable
+//         Demo.var = 42;
+        
+//         // Print the updated value of static variable
+//         System.out.println("Updated value of static variable: " + Demo.var); // Should print 42
+//     }
+//12. Write a class User with a final instance variable userId. Initialize it using a constructor.
+// class User{
+//     final int userId;
+
+//     // Constructor to initialize the final instance variable
+//     User(int id) {
+//         this.userId = id;
+//     }
+//13 Create two classes: A and B. Inside A, create a static variable x. In class B, change and print it.
+class A {
+    static int x = 10; // Static variable in class A
 } 
-public class Main{
-    public static void main(String[] args){
-        // Print default value of static variable
-        System.out.println("Default value of static variable: " + Demo.var); // Should print 0
+class B {
+    public static void main(String[] args) {
+        // Print initial value of static variable x from class A
+        System.out.println("Initial value of x in class A: " + A.x);
         
-        // Assign a value to the static variable
-        Demo.var = 42;
+        // Change the value of static variable x in class A
+        A.x = 20;
         
-        // Print the updated value of static variable
-        System.out.println("Updated value of static variable: " + Demo.var); // Should print 42
+        // Print updated value of static variable x from class A
+        System.out.println("Updated value of x in class A: " + A.x);
     }
-}     
+}    
 
 
 
