@@ -1,5 +1,5 @@
 //PERIMETER OF RECTANGLE
-package bridgelabz.practise_problem1;
+package assignment_1;
 import java.util.*;
 
 public class p7 {
