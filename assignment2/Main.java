@@ -55,22 +55,47 @@ import java.util.*;
 //         System.out.println("Total number of cars created: " + Car.numberofcars);
 //     }
 //3. Create a method inside a class that declares a local variable. Try printing it outside the method. What happens?
-class Car {
-         void method(){
-            int localvariable=10;
-            System.out.println("Local variable inside method: " + localvariable);
-         }
+// class Car {
+//          void method(){
+//             int localvariable=10;
+//             System.out.println("Local variable inside method: " + localvariable);
+//          }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         // Create first car object
+//         Car car = new Car();
+//         car.method();
+        
+//         //System.out.println("Local variable outside method: " + localvariable);
+//         // This will cause a compilation error because localvariable is not accessible here
+//         // Uncommenting the line below will result in an error
+    
+//     }
+//4.Create a class Student with name (String) and marks (int). Use a constructor to initialize values. Create two objects and print their data.
+class Student{
+    String name;
+    int marks;
+
+    // Constructor to initialize values
+    Student(String name, int marks) {
+        this.name = name;
+        this.marks = marks;
+    }
 }
 public class Main {
     public static void main(String[] args) {
-        // Create first car object
-        Car car = new Car();
-        car.method();
+        // Create first student object
+        Student student1 = new Student("Alice", 85);
         
-        //System.out.println("Local variable outside method: " + localvariable);
-        // This will cause a compilation error because localvariable is not accessible here
-        // Uncommenting the line below will result in an error
-    
+        // Create second student object
+        Student student2 = new Student("Bob", 90);
+        
+        // Print details of the first student
+        System.out.println("Student 1 Name: " + student1.name + ", Marks: " + student1.marks);
+        
+        // Print details of the second student
+        System.out.println("Student 2 Name: " + student2.name + ", Marks: " + student2.marks);
     }
 
 }
