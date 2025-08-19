@@ -114,24 +114,42 @@ import java.util.*;
 //         System.out.println("Count from obj2: " + obj2.count); // Should print 5, reflecting the change made by obj1
 //     }
 //6.Create a class Demo where you declare a local variable with the same name as an instance variable. Use this keyword to differentiate.
-class Demo{
-    int value = 10; // Instance variable
+// class Demo{
+//     int value = 10; // Instance variable
 
-    void setnum(int value) { 
-        this.value=value;//differ between lcal and instance 
+//     void setnum(int value) { 
+//         this.value=value;//differ between lcal and instance 
         
-    }
-    void display() {
-        System.out.println("Instance variable value: " + value); // Accessing instance variable
+//     }
+//     void display() {
+//         System.out.println("Instance variable value: " + value); // Accessing instance variable
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Demo demo = new Demo();
+//         demo.setnum(20); // Setting the instance variable using the method
+//         demo.display(); // Displaying the instance variable value
+//     }
+//7. Create a final variable inside a class. Try changing its value later. What error do you get?
+class Demo{
+     final int m=100;
+    void change(){
+        //m = 200; // Uncommenting this line will cause a compilation error
+        System.out.println("Final variable value: " + m);
     }
 }
-public class Main {
+public class Main{
     public static void main(String[] args) {
         Demo demo = new Demo();
-        demo.setnum(20); // Setting the instance variable using the method
-        demo.display(); // Displaying the instance variable value
-    }
+        demo.change(); // Displaying the final variable value
+        //demo.m = 200; // Uncommenting this line will cause a compilation error: "cannot assign a value to final variable m"
+}
 
 }
+
+
+
+
 
         
