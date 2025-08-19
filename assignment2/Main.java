@@ -73,29 +73,45 @@ import java.util.*;
     
 //     }
 //4.Create a class Student with name (String) and marks (int). Use a constructor to initialize values. Create two objects and print their data.
-class Student{
-    String name;
-    int marks;
+// class Student{
+//     String name;
+//     int marks;
 
-    // Constructor to initialize values
-    Student(String name, int marks) {
-        this.name = name;
-        this.marks = marks;
-    }
+//     // Constructor to initialize values
+//     Student(String name, int marks) {
+//         this.name = name;
+//         this.marks = marks;
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         // Create first student object
+//         Student student1 = new Student("Alice", 85);
+        
+//         // Create second student object
+//         Student student2 = new Student("Bob", 90);
+        
+//         // Print details of the first student
+//         System.out.println("Student 1 Name: " + student1.name + ", Marks: " + student1.marks);
+        
+//         // Print details of the second student
+//         System.out.println("Student 2 Name: " + student2.name + ", Marks: " + student2.marks);
+//     }
+//5.Write a program where you modify a static variable using one object, and access it from another object. Show how it reflects the change.
+class Demo{
+    static int count=0;
 }
 public class Main {
     public static void main(String[] args) {
-        // Create first student object
-        Student student1 = new Student("Alice", 85);
+        // Create first object
+        Demo obj1 = new Demo();
+        obj1.count = 5; // Modify static variable using obj1
         
-        // Create second student object
-        Student student2 = new Student("Bob", 90);
+        // Create second object
+        Demo obj2 = new Demo();
         
-        // Print details of the first student
-        System.out.println("Student 1 Name: " + student1.name + ", Marks: " + student1.marks);
-        
-        // Print details of the second student
-        System.out.println("Student 2 Name: " + student2.name + ", Marks: " + student2.marks);
+        // Access static variable from obj2
+        System.out.println("Count from obj2: " + obj2.count); // Should print 5, reflecting the change made by obj1
     }
 
 }
