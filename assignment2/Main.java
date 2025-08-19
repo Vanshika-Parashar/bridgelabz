@@ -23,7 +23,7 @@ import java.util.*;
 //         // Display details of the second car
 //         System.out.println("Car 2 Model: " + car2.model + ", Year: " + car2.year);
 //     }
-// 2. Add a static variable numberOfCars in the Car class from Q1 to count how many objects have been created.
+//2. Add a static variable numberOfCars in the Car class from Q1 to count how many objects have been created.
 // class Car {
 //     String model;
 //     int year;
@@ -67,9 +67,12 @@ public class Main {
         Car car = new Car();
         car.method();
         
-        System.out.println("Local variable outside method: " + localvariable);
+        //System.out.println("Local variable outside method: " + localvariable);
+        // This will cause a compilation error because localvariable is not accessible here
+        // Uncommenting the line below will result in an error
     
     }
+
 }
 
         
