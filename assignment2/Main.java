@@ -132,19 +132,37 @@ import java.util.*;
 //         demo.display(); // Displaying the instance variable value
 //     }
 //7. Create a final variable inside a class. Try changing its value later. What error do you get?
-class Demo{
-     final int m=100;
-    void change(){
+// class Demo{
+//      final int m=100;
+//     void change(){
         //m = 200; // Uncommenting this line will cause a compilation error
-        System.out.println("Final variable value: " + m);
+//         System.out.println("Final variable value: " + m);
+//     }
+// }
+// public class Main{
+//     public static void main(String[] args) {
+//         Demo demo = new Demo();
+//         demo.change(); // Displaying the final variable value
+        //demo.m = 200; // Uncommenting this line will cause a compilation error: "cannot assign a value to final variable m"
+        //The final field Demo.m cannot be assigned . this is the error showing.
+//} 
+//8.Add a static block in a class to initialize a static variable. Print its value from the main() method.
+class Demo{
+    static int staticVariable;
+
+    // Static block to initialize the static variable
+    static {
+        staticVariable = 42; // Initializing static variable
     }
+
+    
 }
 public class Main{
     public static void main(String[] args) {
-        Demo demo = new Demo();
-        demo.change(); // Displaying the final variable value
-        //demo.m = 200; // Uncommenting this line will cause a compilation error: "cannot assign a value to final variable m"
+        // Accessing the static variable from the Demo class
+        System.out.println("Static Variable Value: " + Demo.staticVariable); // Should print 42
 }
+      
 
 }
 
