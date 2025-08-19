@@ -272,13 +272,24 @@ import java.util.*;
 // }
 // 16.Write a program to show that local variables must be initialized before use. Comment on what error appears otherwise.
 
+// class Demo {
+//     void method() {
+//         int x;
+//         // System.out.println(x);
+//         // The local variable x may not have been initialized
+//     }
+// }
+//17. Create a class with a static final variable (a constant), e.g., PI = 3.14. Try changing it.
+
 class Demo {
-    void method() {
-        int x;
-        // System.out.println(x);
-        // The local variable x may not have been initialized
+    static final double PI = 3.14;
+    void show() {
+        PI = 3.14159; // This will cause a compilation error because PI is a final variable and cannot be changed.
+        System.out.println("Value of PI: " + PI);
     }
 }
+
+
 
 
 
