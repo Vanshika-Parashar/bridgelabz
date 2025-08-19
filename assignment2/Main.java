@@ -227,21 +227,63 @@ import java.util.*;
 //         this.userId = id;
 //     }
 //13 Create two classes: A and B. Inside A, create a static variable x. In class B, change and print it.
-class A {
-    static int x = 10; // Static variable in class A
-} 
-class B {
-    public static void main(String[] args) {
-        // Print initial value of static variable x from class A
-        System.out.println("Initial value of x in class A: " + A.x);
+// class A {
+//     static int x = 10; // Static variable in class A
+// } 
+// class B {
+//     public static void main(String[] args) {
+//         // Print initial value of static variable x from class A
+//         System.out.println("Initial value of x in class A: " + A.x);
         
-        // Change the value of static variable x in class A
-        A.x = 20;
+//         // Change the value of static variable x in class A
+//         A.x = 20;
         
-        // Print updated value of static variable x from class A
-        System.out.println("Updated value of x in class A: " + A.x);
+//         // Print updated value of static variable x from class A
+//         System.out.println("Updated value of x in class A: " + A.x);
+//     }
+//14.Create a method that accepts a parameter with the same name as a class variable. Use this keyword to assign it.
+// class Demo {
+//     int num;
+//     void setNum(int num) {
+//         this.num = num;
+//     }
+// 15. Create a class with multiple methods accessing the same instance variable. Show how changes made in one method affect another.
+//  class Demo {
+//     int num;
+//     void setNum(int num) {
+//         this.num = num;
+//     }
+//     void display() {
+//         System.out.println("Current value of num: " + num);
+//     }
+//     void increment() {
+//         num++;
+//         System.out.println("Incremented value of num: " + num);
+//     }
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Demo d = new Demo();
+//         d.setNum(10);
+//         d.display();
+//         d.increment();
+//         d.display(); 
+//     }
+// }
+// 16.Write a program to show that local variables must be initialized before use. Comment on what error appears otherwise.
+
+class Demo {
+    void method() {
+        int x;
+        // System.out.println(x);
+        // The local variable x may not have been initialized
     }
-}    
+}
+
+
+
+
+    
 
 
 
