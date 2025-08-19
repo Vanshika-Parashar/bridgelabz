@@ -281,13 +281,39 @@ import java.util.*;
 // }
 //17. Create a class with a static final variable (a constant), e.g., PI = 3.14. Try changing it.
 
+// class Demo {
+//     static final double PI = 3.14;
+//     void show() {
+//         PI = 3.14159; // This will cause a compilation error because PI is a final variable and cannot be changed.
+//         System.out.println("Value of PI: " + PI);
+//     }
+// }
+//18. Demonstrate variable shadowing using local and instance variables with the same name. Show how to access both.
+
 class Demo {
-    static final double PI = 3.14;
+    int num = 100; // instance
     void show() {
-        PI = 3.14159; // This will cause a compilation error because PI is a final variable and cannot be changed.
-        System.out.println("Value of PI: " + PI);
+        int num = 50; // local
+        System.out.println("Local: " + num);
+        System.out.println("Instance: " + this.num);
     }
 }
+
+//19. Create an instance variable in a class. Create two objects with different values for it. Show that each object keeps its own copy.
+
+// class Demo {
+//     int value;
+// }
+// public class Main {
+//     public static void main(String[] args) {
+//         Demo d1 = new Demo();
+//         Demo d2 = new Demo();
+//         d1.value = 10;
+//         d2.value = 20;
+//         System.out.println("d1: " + d1.value + ", d2: " + d2.value);
+//     }
+// }
+
 
 
 
