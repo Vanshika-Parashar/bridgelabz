@@ -1,5 +1,5 @@
 //CALCULATE AVERAGE OF 3 NOS
-package assignment_1;
+package Day1;
 import java.util.*;
 
 public class p9 {

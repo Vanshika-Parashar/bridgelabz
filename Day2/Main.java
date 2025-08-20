@@ -1,4 +1,4 @@
-package assignment2;
+package Day2;
 import java.util.*;
 //1.Create a class Car with instance variables model and year. Create two car objects and display their details
 // class Car {
@@ -323,7 +323,7 @@ public class Main {
         System.out.println("Static Variable: " + Demo.staticVar);
     }
 }
- 
+
 
 
 
