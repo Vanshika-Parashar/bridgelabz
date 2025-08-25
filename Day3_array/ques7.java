@@ -37,6 +37,7 @@ public class ques7 {
         else{
             System.out.println("not a valid natural number");
         }
+        sc.close();
         
 
 }

@@ -22,6 +22,7 @@ public class ques8 {
                 System.out.println("Factor at index " + i + " is " + factors[i]);
             }
         }
+        sc.close();
     
 
         
