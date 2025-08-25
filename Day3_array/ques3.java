@@ -1,4 +1,4 @@
-package Day3;
+package Day3_array;
 import java.util.*;
 /*Create a program to print a multiplication table of a number. */
 

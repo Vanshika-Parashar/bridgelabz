@@ -1,4 +1,4 @@
-package Day3;
+package Day3_array;
 import java.util.*;
 /*Write a program FizzBuzz, take a number as user input and if it is a positive integer loop from 0 
 to the number and save the number, but for multiples of 3 save "Fizz" instead of the number, 

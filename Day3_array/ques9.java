@@ -1,4 +1,4 @@
-package Day3;
+package Day3_array;
 import java.util.*;
 /*Working with Multi-Dimensional Arrays. Write a Java program to create a 2D Array and Copy the
  2D Array into a single dimension array

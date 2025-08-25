@@ -1,4 +1,4 @@
-package Day3;
+package Day3_array;
 import java.util.*;
 /*Create a program to find the mean height of players present in a football team.
  */

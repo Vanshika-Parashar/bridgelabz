@@ -1,4 +1,4 @@
-package Day3;
+package Day3_array;
 import java.util.*;
 /*Write a program to take user input for 5 numbers and check whether a number is positive,  negative,
  or zero. Further for positive numbers check if the number is even or odd. Finally compare the first

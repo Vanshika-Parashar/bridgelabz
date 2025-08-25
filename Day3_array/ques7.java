@@ -1,4 +1,4 @@
-package Day3;
+package Day3_array;
 import java.util.*;
 /*Create a program to save odd and even numbers into odd and even arrays between 1 to the number
  entered by the user. Finally, print the odd and even numbers array
