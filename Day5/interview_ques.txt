@@ -1,0 +1,21 @@
+Q1.What is the difference between JDK and JRE?
+A1.jdk stands for java development kit which contains different  development tools like compiler ,debugger  which is required to run java smoothly in our sysem.its contains .
+where as jre stands for java runtime environment it contains core libraries ,different files and jvm to run java code .jre is also a part of jdk and it is only responsible for smoothly running of java code.
+Q2.What is Java Virtual Machine (JVM)?
+as2.java virtual machine is a part of jre.jvm sets a virtual environment on our system by loading different classes it interprets bytecode so that our code can smoothly run in our syatem.
+Q3.What is JIT compiler?
+A3.jit which stands for just in time compiler is a part of jvm which converts the bytecode into machine code at runtime so that our java program can work on any system using jit.
+Q4.How Java platform is different from other
+platforms?
+A4.1.java is platform independent means it  compiles source code to bytecode which allows us to run our java progra on any system but it needs to have jvm installed where in other languages like c and c++ it does not happen.
+2.java language is more secure than other languages like c and c++ which allows direct memory acces using pointers.
+3.it is automatic garbage collecter which stores unused memory.
+Q5.Why people say that Java is ‘write once and
+run anywhere’ language?
+A5.because java does not directly compile our code into machine code it compiles it to bytecode and jvm works as a tranlator which converts our bytecode into machinecode so our java code can run on any os if jvm is installed.
+Q6. How does ClassLoader work in Java?
+A6.classloader loads the class file into memory .it verifies correctness of bytecode.
+Q7. Do you think ‘main’ used for main method is a
+keyword in Java?
+A8.no 
+

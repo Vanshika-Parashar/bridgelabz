@@ -1,5 +1,6 @@
 package Day4_string;
 import java.util.*;
+//Check if two strings are equal (case-sensitive and case-insensitive).
 
 public class ques1 {
     public static void main(String[]args){
