@@ -6,7 +6,7 @@ import java.util.*;
 public class ques3 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("eneter string");
+        System.out.println("enter string");
         String s=sc.nextLine();
         int n=s.length();
         char [] ch=new char[n];
